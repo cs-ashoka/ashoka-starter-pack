@@ -1,0 +1,35 @@
+#nonnav {
+    min-height: calc(100vh - 44px - 240px);
+    background: url(land_inside_trees.png) bottom repeat-x,
+                #c3dffb;
+    padding: 40px 0 200px 0;
+}
+
+#content {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 3px 3px 10px #00000055;
+}
+
+#overcontent {
+    background: url(land_folded_paper.png) top repeat;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#landtitle {
+    display: none;
+}
+
+#map {
+    margin-top: 10px;
+}
+
+@media print {
+    #content { border: none; padding: none; }
+}
+
