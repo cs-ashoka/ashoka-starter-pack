@@ -107,3 +107,16 @@ p {
  	padding-left: 40px;
 }
 
+footer {
+	font-family: "SF Pro Display", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+  	position:fixed;
+   	left:0px;
+   	bottom:0px;
+   	height:30px;
+   	width:100%;
+   	background:#FFFFFF;
+   	padding-top: 5px;
+}
+
