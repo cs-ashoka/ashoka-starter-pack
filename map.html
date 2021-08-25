@@ -6,73 +6,20 @@
     <link rel=stylesheet href="css/static.css">
     <link rel=stylesheet href="css/land.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+
     <script>
         function togglePopup(idname)
         {
             document.getElementById(idname).classList.toggle("active");
         }
+
+        $(function() {
+    $('.map').maphilight();
+});
     </script>
-
-    <style>
-
-
-.popup .overlay {
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.7);
-    z-index:1;
-    display:none;
-  }
-   
-  .popup .content {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%) scale(0);
-    background:#fff;
-    width:500px;
-    height:250px;
-    z-index:2;
-    text-align:center;
-    padding:20px;
-    padding-top: 1%;
-    box-sizing:border-box;
-  }
-   
-  .popup .close-btn {
-    cursor:pointer;
-    position:absolute;
-    right:20px;
-    top:20px;
-    width:30px;
-    height:30px;
-    background:#222;
-    color:#fff;
-    font-size:25px;
-    font-weight:600;
-    line-height:30px;
-    text-align:center;
-    border-radius:50%;
-  }
-   
-  .popup.active .overlay {
-    display:block;
-  }
-
-  .popup-content-para
-  {
-      padding-top: 1%;
-  }
-   
-  .popup.active .content {
-    transition:all 300ms ease-in-out;
-    transform:translate(-50%,-50%) scale(1);
-  }
-
-    </style>
+    
     <title>Map to Survive @ Ashoka</title>
 </head>
 <body>
@@ -117,10 +64,10 @@
         <h1 id="landtitle">Penny Park</h1>
         <div id="content" class="map">
             <div id="map" style="width: 960px; height: 1221px">
-                <img src="files/map.png" class="base" usemap="#mapmap">
+                <img src="files/map.png" class="map" usemap="#mapmap">
 
                 
-                <div class="p" style="left: 682px; top: 916px; width: 308px; height: 355px">Cactus Canyon</div>
+                <div class="p" style="left: 682px; top: 916px; width: 308px; height: 355px" id = "image1">Cactus Canyon</div>
 
                 <div class="p" style="left: -30px; top: 916px; width: 308px; height: 355px">Cascade Bay</div>
 
@@ -171,9 +118,9 @@
         <div class = overlay></div>
         <div class="content">
             <div class="close-btn" onclick="togglePopup('popup1')">&times;</div>
-            <h3>Title</h3>
-            <p class = "popup-content-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis expedita, hic voluptatum itaque distinctio quis animi soluta tenetur nobis consequatur, quidem nemo cum architecto sit, eius eos omnis temporibus alias!
-            </p>
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectet
+            </div>
         </div>
     </section>
 </body>
