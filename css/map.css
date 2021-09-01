@@ -1,3 +1,7 @@
+.map {
+  margin: auto;
+}
+
 .popup .overlay {
   position: fixed;
   top: 0px;
@@ -15,8 +19,8 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #fff;
-  width: 40vmax;
-  height: 40vmax;
+  width: 50vmin;
+  height: 50vmin;
   z-index: 2;
   text-align: center;
   padding: 20px;
@@ -29,13 +33,13 @@
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 3vmax;
-  height: 3vmax;
+  width: 3vh;
+  height: 3vh;
   background: #222;
   color: #fff;
-  font-size: 3vmax;
-  font-weight: 600;
-  line-height: 3vmax;
+  font-size: 3vh;
+  font-family: "Quicksand", sans-serif;
+  line-height: 3vh;
   text-align: center;
   border-radius: 50%;
 }
@@ -44,12 +48,17 @@
   display: block;
 }
 
+.title {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 5vh;
+}
+
 .text {
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4vmax;
+  padding-top: 3vh;
+  font-size: 2.5vmin;
+  font-family: "Quicksand", sans-serif;
 }
 
 .popup.active .content {
