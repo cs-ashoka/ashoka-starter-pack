@@ -2,46 +2,38 @@
 <html>
 <head>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Guide to Survive @ Ashoka</title>
 	
 	<!-- Bootstrap stylesheet -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 	<!-- My stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/landing.css">
 </head>
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-<!--Background Video -->
-	<video id="background-video" autoplay loop muted poster="poster.png">
-  <source src="files/Circles.mp4" type="video/mp4">
-</video>
-<!--Background Video -->	
 	
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 <!-- Bootstrap Navbar Code -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;" id = "topnavbar">
+
+<nav style = "background-color: #FFC263;" class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Guide to Survive @ Ashoka</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+      <img src="CSSoc_Logo.png" alt="" height="40pxpx" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="map.html">Map</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">Site</a>
+        <a class="nav-link" href="https://www.instagram.com/cs.ashoka/">Instagram</a>
+        <a class="nav-link" href="#">Twitter</a>
+      </div>
     </div>
   </div>
 </nav>
@@ -49,15 +41,15 @@
 
 <div class = "container d-flex">
 	<h1>Welcome to Ashoka, first-years!</h1>
-	<h2>This a comprehensive guide to surviving your first year @ ashoka, as told by the Computer Science Society and Kalinga Magazine.</h2><br>
-	<center><p>This site covers a variety of topics, from topic 1 to topic 3, all told to you with brilliant illustrations and satirical writing.</p></center>
-	<center><p>For the downloadable PDF, look no further. For the interactive map of campus, click on Map in the header above.</p></center>
+	<h2>This a comprehensive guide to surviving your first year @ Ashoka, as told by the Computer Science Society and Kalinga Magazine.</h2><br>
 	<br>
-	<button class="download-btn">Download
+  <a href="starterpack.pdf" download="The Ashokan Starter Pack.pdf">
+	<button class="glow-on-hover">Download
   </button>
+  </a>
 </div>
 
-<footer><center>&copy The Computer Science Society of Ashoka, 2021</center></footer>	
+<footer style = "background-color: #244579;color: white;"><center>Made with <i class="bi bi-heart-fill"></i> by the CS Society.</center></footer>	
 	
 </body>
 </html>
